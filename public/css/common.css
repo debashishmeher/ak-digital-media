@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --heading-font: "Poppins", sans-serif;
+    --text-font: "Open Sans", sans-serif;
+    --primery-color: #231f91;
+    --secondary-color: #20b4d5;
+    --text-color:#f0ffff;
+    --theme-color:#000121;
+}
+::-webkit-scrollbar{
+    width: 5px;
+    background-color: var(--theme-color);
+}
+::-webkit-scrollbar-thumb{
+    margin: 1px;
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+}
+
+body {
+    font-family: var(--text-font);
+    color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+}
+h1{
+    font-size: clamp(1.5rem,10vw,3.5rem);
+    text-transform: uppercase;
+    text-shadow: 0 0 30px #20b4d5b6;
+}
+h2{
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+}
+h2::after{
+    content: "";
+    height: 3px;
+    width: 80%;
+    background-image: linear-gradient(45deg, var(--primery-color), var(--secondary-color));
+    position: absolute;
+    bottom: -5px;
+    border-radius: 3px;
+    left: 10%;
+}
+h3{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.align-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-name {
+    display: block;
+    padding: 5px;
+    font-size: 1.6rem;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 80%;
+}
+
+.sub-logo-name {
+    color: var(--primery-color);
+    text-align: center;
+    font-size: 0.8rem;
+    letter-spacing: 20px;
+}
+.sub{
+    text-transform: uppercase;
+    color:var(--primery-color);
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.para{
+    color: var(--text-color);
+    line-height: 110%;
+    /* text-align: justify; */
+}
+.para-center{
+    line-height: 110%;
+    color: var(--text-color);
+    text-align: center;
+}
+.btn{
+    margin-top: 1rem;
+    padding: 10px 20px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 50px;
+    border: 0px;
+    background-image:linear-gradient(60deg,var(--primery-color),var(--secondary-color));
+    transition: 0.4s;
+    
+}
+.btn:hover{
+    background-image:linear-gradient(0deg,var(--secondary-color),var(--primery-color));
+}
+.sticky{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background-color: var(--theme-color);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    /* backdrop-filter: blur(15px); */
+}
+.align-end{
+    display: flex;
+    justify-content: flex-end;
+}
+.page-heading{
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
+}
+.page-name{
+    color: white;
+    font-size: 2.2em;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.62);
+}
+.page-links{
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    display: flex;
+    gap: 5px;
+    text-transform: uppercase;
+    a{
+        font-weight: 600;
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.399);
+    }
+}
+

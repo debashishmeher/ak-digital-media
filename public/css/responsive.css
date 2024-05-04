@@ -1,0 +1,50 @@
+@media screen and (max-width:886px) {
+    .toggle {
+        display: flex;
+    }
+
+    .nav-main {
+        background-color: rgba(0, 0, 0, 0.462);
+        backdrop-filter: blur(15px);
+        position: fixed;
+        left: -100%;
+        z-index: 999;
+        transition: 0.5s;
+        top: 10vh;
+        width: 80%;
+        height: 90vh;
+    }
+
+    .navslide {
+        left: 0%;
+    }
+
+    .navbar {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .navbar li a {
+        font-size: 1em;
+        font-weight: 600;
+        text-transform: uppercase;
+        display: block;
+        width: 100%;
+        padding: 5px 1rem;
+    }
+
+    .nav-social {
+        display: block;
+        padding: 1rem;
+        position: absolute;
+        bottom: 10%;
+        width: 100%;
+        border-top: 2px solid rgb(213, 213, 213);
+    }
+
+    .socials {
+        gap: 1rem;
+    }
+}
